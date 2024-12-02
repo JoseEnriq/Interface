@@ -1,0 +1,82 @@
+/* Estilo Geral */
+body {
+    background-color: #1e1e2d; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Cabeçalhos */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  
+  /* Tabela */
+  .table {
+    background-color: #2a2a3c;
+    color: #ffffff;
+  }
+  
+  .table th {
+    background-color: #343a40; /* Cabeçalho mais escuro */
+    color: #ffffff;
+    border-color: #454d55; /* Borda */
+  }
+  
+  .table td {
+    background-color: #2a2a3c; /* Fundo das células */
+    color: #ffffff;
+    border-color: #454d55;
+  }
+  
+  /* Botões */
+  .btn-success {
+    background-color: #1c7430; /* Verde escuro */
+    border-color: #1c7430;
+  }
+  
+  .btn-warning {
+    background-color: #ff8c00; /* Laranja */
+    border-color: #ff8c00;
+  }
+  
+  .btn-danger {
+    background-color: #e63946; /* Vermelho */
+    border-color: #e63946;
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Azul */
+    border-color: #007bff;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Cinza */
+    border-color: #6c757d;
+  }
+  
+  /* Modal */
+  .modal-content {
+    background-color: #2a2a3c;
+    color: #ffffff;
+  }
+  
+  /* Inputs */
+  .form-control {
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid #454d55;
+  }
+  .form-control:focus {
+    background-color: #3c3f50;
+    color: #ffffff;
+    border-color: #007bff; /* Azul ao focar */
+    outline: none;
+  }
+  
+  /* Botão no rodapé */
+  .btn-modal {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  
