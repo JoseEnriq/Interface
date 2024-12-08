@@ -33,6 +33,7 @@ const ModeloPage = () => {
   const fetchModelos = async () => {
     try {
       const response = await axios.get("http://localhost:3000/modelo");
+      console.log("Modelos carregados:", response.data); // Verifica os dados recebidos
       setModelos(response.data);
     } catch (error) {
       setErrorMessage("Erro ao carregar os modelos.");
@@ -80,6 +81,11 @@ const ModeloPage = () => {
   // Função para salvar o modelo (criar ou editar)
   const handleSave = async () => {
     try {
+      console.log("Dados enviados:", {
+        ...formData,
+        categoriaId: parseInt(formData.categoriaId),
+        marcaId: parseInt(formData.marcaId),
+      });
       if (editingModelo) {
         // Atualiza um modelo existente
         await axios.put(`http://localhost:3000/modelo/${editingModelo}`, formData);
@@ -91,6 +97,7 @@ const ModeloPage = () => {
       fetchModelos();
       handleCloseModal();
     } catch (error) {
+      console.error("Erro ao salvar o modelo", error);
       setErrorMessage("Erro ao salvar o modelo.");
     }
   };
@@ -102,6 +109,7 @@ const ModeloPage = () => {
       // Recarrega a lista de modelos
       fetchModelos();
     } catch (error) {
+      console.error("Erro ao deletar o modelo", error);
       setErrorMessage("Erro ao deletar o modelo.");
     }
   };
